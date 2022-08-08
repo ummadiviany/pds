@@ -1,0 +1,7 @@
+Learning about how computers work is essential to effective use of computers. 
+Computers run programs that are written in a programming language. 
+Learning atleast one programming language is important in todays world.
+This course will cover the basics of programming languages and how to use them to build real world applications.
+
+During this 12-week course, you will learn to automate your daily tasks with a computer, solve numerical problems, working with tons of data (tabular & medical images) and make your life easier.
+Through weekly hands-on assignments and final project, you will acquire the toolset to solve real world computational problems.
