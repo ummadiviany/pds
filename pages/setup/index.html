@@ -17,16 +17,16 @@
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZ6V4Y9G9B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WZ6V4Y9G9B');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZ6V4Y9G9B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WZ6V4Y9G9B');
+    </script>
 
 </head>
 
@@ -83,6 +83,7 @@
                     <ol>
                         <li><a href="https://www.python.org/" target="_blank">Python 3.9 or higher</a> (Your python
                             compiler)</li>
+                        <li><a href="" target="_blank">C/C++ Compiler (For fundemental concepts)</a></li>
                         <li><a href="https://git-scm.com/" target="_blank">Git</a> (Version Control & Assignment
                             submission)</li>
                         <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (Devlopment
@@ -93,7 +94,7 @@
                             environments)</li>
                     </ol>
 
-                    
+
                     <!-- <br> -->
                     <strong>Note:</strong> You can contact teaching assistants for assistance in setting up your
                     environment. Your TAs can be found on your <a href="https://ummadiviany.github.io/pds/"
@@ -118,6 +119,7 @@
                         <li> <a href="">Configure your local machine</a>
                             <ul>
                                 <li><a href="#install-python">Installing Python</a></li>
+                                <li><a href="#install-c/c++">Installing C/C++</a></li>
                                 <li><a href="#install-vscode">Installing VS Code</a></li>
                                 <li><a href="#install-git">Installing Git</a></li>
                                 <li><a href="#create-github">Create your GitHub account</a></li>
@@ -141,10 +143,10 @@
                         <br>
                         Installing python easier than you can think of. But for stater this description might help
                     <ol>
-                        <li>Check if it already insalled. Type this command in the terminal:
+                        <li>Check if it already insalled. Type this command in the <strong>terminal</strong>:
                             <code>python --version</code> or <code>python3 --version</code>
                             If you see something like this : <code>Python 3.9.0</code> or any other version then you are
-                            good to go. Not need to install.
+                            good to go. No need to install.
 
                             If you see something like this : <code>python is not recognized ....</code>, then you need
                             to install.
@@ -180,6 +182,65 @@
                     </ol>
                     </p>
 
+                    <h3 id="install-c/c++">Install C/C++</h3>
+
+                    <p>
+                        C and C++ are more fundemental languages than Python.
+                        C and C++ are used for developing all sorts of software.
+                        Todays most of the fast running algorithms are developed in C and C++.
+                        <br>
+                        <br>
+                        Let us see how to install C/C++ compiler.
+                    <ol>
+                        <li>Check if it already insalled. Type this command in the <strong>terminal</strong>:
+                            <code>g++ --version</code>.
+                            If you see something like this : <code>g++  11.2.0</code> or any other version then you are
+                            good to go. No need to install.
+
+                            But if you see something like this : <code>g++ is not recognized ....</code>, then you need
+                            to install.
+                        </li>
+
+                        <li>Install C/C++ compiler
+                            <ul>
+                                <li><b>Windows : </b>
+                                    <ul>
+                                        <li>
+                                            Download the latest <code>C/C++ compiler</code> from <a
+                                                href="https://sourceforge.net/projects/mingw/" target="_blank">C/C++
+                                                Compiler download page</a>
+                                            and proceed with default installation.
+                                        </li>
+                                        <li>
+                                            Once installed, add the path of g++ compiler to the <code>PATH</code>
+                                            environment variable.
+                                            <br>
+                                            Check this <a
+                                                href="https://itechhacks.com/download-c-compiler-in-windows-11/"
+                                                target="_blank">tutorial</a> if you need any help.
+                                        </li>
+                                        <li>
+                                            Add <code>C:\MinGW\bin</code> to the <code>PATH</code> environment variable.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <b>macOS : </b> For mac user, clang is the default compiler. No need to install.
+                                </li>
+
+                                <li>
+                                    <b>Linux/Ubuntu : </b> In the <strong>terminal</strong> type
+                                    <code>sudo apt install gcc g++</code> and then
+                                    <br>
+                                    type <code>sudo apt install build-essential</code>.
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ol>
+                    </p>
+
 
                     <h3 id="install-vscode">Install Visual Studio Code</h3>
                     <p>
@@ -197,7 +258,8 @@
                         <br>
                         <b>Windows/MacOS : </b> Click on the downloaded file and proceed with standard installation.
                         <br>
-                        <b>Linux/Ubuntu : </b> After downloading you have to run the following command in the terminal:
+                        <b>Linux/Ubuntu : </b> After downloading you have to run the following command in the
+                        <strong>terminal</strong>:
                         <code>sudo dpkg -i ~/path/to/code_1.XXX.deb</code>. Or else you can also use <code>sudo
                             apt-get install code</code> to install from the package manager.
 
@@ -261,37 +323,61 @@
                     <h3 id="configure-git">Configure Git with your credentials</h3>
                     <p>
                         Now you need to configure your Git with your GitHub credentials.
-                        Open your terminal/cmd.
+                        Open your <strong>terminal/cmd</strong>.
                     <ul>
                         <li>Type <code>git config --global user.name "your username"</code> and replace <b>"your
                                 username"</b> with your
                             username and hit enter. This command for me looks like
-                            this <code>git config --global user.name ummadiviany</code></li>
+                            this <code>git config --global user.name ummadiviany</code>
+                        </li>
+                        <br>
+                        <li>
+                            Type <code>git config --global user.email "your email"</code> and replace <b>"your
+                                email"</b>
+                            with your
+                            email. This command for me looks like this
+                            <code>git config --global user.email ummadi.vinay2000@gmail.com</code>
+                        </li>
+                        <br>
                         <li> Type <code>git config --global user.password "your password"</code> and replace <b>"your
                                 password"</b>with
                             peronal access token that you have generated. This command for me looks
                             like this <code>git config --global user.password your_personal_access_token</code></li>
                         </li>
 
+
                     </ul>
                     </p>
 
-                    <h3 id="configure-vscode">Configure VSCode for Python & Source Control</h3>
+                    <h3 id="configure-vscode">Configure VSCode for Python, C, C++ & Source Control</h3>
                     <p>
-                        Now you need to configure VSCode for Python and Source Control(GitHub).
+                        Now you need to configure VSCode for Python, C, C++ and Source Control(GitHub).
                         Python is a community driven project and there are many extensions for VSCode.
                         We will be installing a few of them.
 
                         <br>
 
                     <ul>
-                        <li><code>Open VSCode</code> -> <code>Extensions</code> -> <code>Search for Python</code> ->
-                            <code>Install the recommended toolkit for Python by Microsoft </code>. Check out <a
+                        <li>Follow these steps to configure VSCode:
+                            <code>Open VSCode</code> -> <code>Extensions</code>
+                        </li>
+
+                        <li>Search for <code>Python</code>
+                            and nstall the recommended toolkit for Python by Microsoft </code>. Check out <a
                                 href="https://5minutebi.com/2019/03/14/how-to-setup-vscode-for-python-and-github-integration/"
                                 target="_blank">this
                                 article</a> if you need more help.
                         </li>
-                        <li><code>Open VSCode</code> -> <code>Extensions</code> -> <code>Search for GitHub</code>
+
+                        <li>
+                            Search for <code>C/C++</code> and install the recommended toolkit for C/C++ by Microsoft.
+                        </li>
+
+                        <li>
+                            Search for <code>Code runner</code> and install the package by <strong>Jun Han</strong>.
+                        </li>
+
+                        <li>Search for <code>GitHub</code>
                             -> <code>Install GitHub by Knister Peter</code>. Check out
                             <a href="https://5minutebi.com/2019/03/14/how-to-setup-vscode-for-python-and-github-integration/"
                                 target="_blank">this
@@ -300,15 +386,31 @@
 
                     </p>
 
+                    
                     <h3>Final remarks</h3>
                     <p>
-                        Thats it. You are ready to start coding. You can start with <code>hello.py</code> in your VS
-                        Code if you are too anxious to type the code.
+                        Thats it. You are ready to start coding. You can start with below hello world codes, if you are
+                        too anxious to type the code.
 
                         <br>
 
                         If you are having any trouble setting up your environment, you can contact your Teaching
                         Assistants for help.
+                    </p>
+
+                    <h4>Hello World in Python</h4>
+                    <p>
+                        <img src="../img/Hello World in Python.png" height="200" width="600">
+                    </p>
+
+                    <h4>Hello World in C</h4>
+                    <p>
+                        <img src="../img/Hello World in C.png" height="300" width="600">
+                    </p>
+
+                    <h4>Hello World in C++</h4>
+                    <p>
+                        <img src="../img/raycast-cpp-0.png" height="300" width="600">
                     </p>
 
                     <!-- <h3 id="configure-local-machine">Working remotely on Google Colaboratory</h3>
@@ -581,18 +683,18 @@ pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
                     <!-- <li>
           <a href="mailto:karpathy@cs.stanford.edu">karpathy@cs.stanford.edu</a>
         </li> -->
-                </ul>
-            </div>
+    </ul>
+    </div>
 
-            <div class="footer-col-2 column">
+    <div class="footer-col-2 column">
 
-            </div>
+    </div>
 
-            <div class="footer-col-3 column">
+    <div class="footer-col-3 column">
 
-            </div>
+    </div>
 
-        </div>
+    </div>
 
     </footer> -->
 
